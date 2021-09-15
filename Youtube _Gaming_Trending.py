@@ -18,6 +18,9 @@ time.sleep(1)
 counter = 0
 find_href = web.find_elements_by_id('video-title')
 for my_href in find_href:
+
+#for my_href in find_href[:5]: - #Another method that can be used to control the iteration.
+
     TopTrend = print(my_href.get_attribute("aria-label"))
     counter += 1
     if counter == 5:
